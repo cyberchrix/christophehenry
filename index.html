@@ -33,7 +33,7 @@
   <meta name="twitter:description" content="Applications web et mobiles avec une touche moderne." />
   <meta name="twitter:image" content="https://christophehenry.fr/assets/og-image.jpg" />
 
-  <!-- hreflang (optionnel) -->
+  <!-- hreflang -->
   <link rel="alternate" hreflang="fr" href="https://christophehenry.fr/" />
   <link rel="alternate" hreflang="en" href="https://christophehenry.fr/en" />
 
@@ -139,7 +139,6 @@
       transform: translateY(-10px);
       animation: slideFadeIn 0.6s ease-out 3s forwards;
       transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
-      position: relative;
     }
 
     .contact-btn:hover {
@@ -158,6 +157,7 @@
       opacity: 0;
       animation: slideFadeLight 1s ease-out 3.4s forwards;
       transform: translateY(-10px);
+      text-align: center;
     }
 
     .linkedin {
@@ -231,12 +231,17 @@
       .baseline {
         font-size: 0.9rem;
       }
-      .local {
-        font-size: 0.75rem;
-        padding: 0 10px;
-      }
       .logo {
         width: 90px;
+      }
+      .local {
+        position: static;
+        margin-top: 30px;
+        padding: 0 10px;
+        text-align: center;
+        opacity: 0.3;
+        animation: slideFadeLight 1s ease-out 3.4s forwards;
+        transform: translateY(-10px);
       }
     }
   </style>
@@ -248,7 +253,7 @@
       <span class="part name">christophehenry</span><span class="part suffix">.fr</span>
     </h1>
     <p class="baseline">Web & Mobile App Development</p>
-    <a href="mailto:contact@christophehenry.fr" class="contact-btn">Me contacter</a>
+    <a href="mailto:contact@christophehenry.fr" class="contact-btn">Contact me</a>
   </main>
   <p class="local">Available in Lille, Arras, Dunkirk, Calais, Amiens, Paris, and Belgium.</p>
   <a href="https://www.linkedin.com/in/christophe-henry-886547b" target="_blank" class="linkedin" aria-label="LinkedIn">
