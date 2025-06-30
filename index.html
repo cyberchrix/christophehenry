@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -36,6 +37,7 @@
   <!-- hreflang -->
   <link rel="alternate" hreflang="fr" href="https://christophehenry.fr/" />
   <link rel="alternate" hreflang="en" href="https://christophehenry.fr/en" />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
 
   <!-- JSON-LD -->
   <script type="application/ld+json">
@@ -88,14 +90,13 @@
 
     .logo {
       width: 120px;
-      margin-bottom: 20px;
       opacity: 0;
       transform: scale(0.8) rotate(-5deg);
       animation: logoEnter 1s ease-out 0.5s forwards, logoPulse 3s ease-in-out 2s infinite;
     }
 
     h1.domain {
-      font-size: 2.5rem;
+      font-size: 4.5rem;
       margin: 0;
     }
 
@@ -154,7 +155,7 @@
       font-size: 0.85rem;
       color: #ccc;
       position: absolute;
-      bottom: 40px;
+      bottom: 35px;
       left: 0;
       width: 100%;
       text-align: center;
@@ -262,6 +263,30 @@
   z-index: 1;
 }
 
+.floating-note {
+  position: absolute;
+  left: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: left;
+  z-index: 2;
+}
+
+.floating-arrow {
+  width: 100px;
+  transform: rotate(-15deg);
+  margin-bottom: -10px;
+}
+
+.floating-text {
+  font-family: 'Caveat', cursive;
+  font-size: 1.3rem;
+  line-height: 1.5em;
+  color: white;
+  opacity: 0.9;
+  transform: rotate(-2deg);
+}
+
 </style>
 </head>
 <body>
@@ -271,6 +296,12 @@
     <h1 class="domain">
       <span class="part name">christophehenry</span><span class="part suffix">.fr</span>
     </h1>
+    <!-- <div class="floating-note">
+        <svg class="floating-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 202 82" width="100" height="41" fill="none">
+            <path d="M3 79C39.667 44.667 127.2 7.2 199 15M199 15L174.5 2M199 15L183 34" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <p class="floating-text">Je conçois de belles applications<br>performantes et au goût du jour</p>
+    </div> -->
     <p class="baseline">Web & Mobile App Development</p>
     <a href="mailto:contact@christophehenry.fr" class="contact-btn">Contact me</a>
   </main>
